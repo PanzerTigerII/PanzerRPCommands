@@ -1,7 +1,7 @@
 # Simple RP Commands
 Plugin adding some RolePlay Commands
 
-# Commands
+# Commands:
 .Me
 .Do
 .Pomoc
