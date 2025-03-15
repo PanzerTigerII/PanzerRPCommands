@@ -105,4 +105,4 @@ try_result:
 ```
 ==============
 # That's all.
-Have a nic day :3
+Have a nice day :3
