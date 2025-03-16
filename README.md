@@ -8,6 +8,7 @@ Plugin adding some RolePlay Commands
 .Ooc
 .Patrz
 .Try
+.Opis (Siebie, Postaci)
 .Opis (Pokoju, Przedmiotu)
 ==============
 # Config:
