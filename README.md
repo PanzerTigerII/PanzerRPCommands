@@ -6,9 +6,9 @@ Plugin adding some RolePlay Commands
 .Do
 .Pomoc
 .Ooc
-.Look
+.Patrz
 .Try
-.Desc
+.Opis (Pokoju, Przedmiotu)
 ==============
 # Config:
 ```yaml
@@ -20,44 +20,43 @@ debug: false
 me:
   range: 15
   duration: 5
-  format: '<size=25><align=left><color=Red>「Me」</color><color=#FFFF00>{0}</color> : {1}</align></size>'
+  format: '<size=25><align=left><color=#003300>🎭|「Me」</color><color=#FFFF00>{0}</color> : <color=#727472>{1}</align></size>"'
 do:
   range: 15
   duration: 5
-  format: '<size=25><align=left><color=green>「Do」</color><color=#FFFF00>{0}</color> : {1}</align></size>'
-look:
+  format: '<size=25><align=left><color=#003300>🎭|「Do」</color><color=#FFFF00>{0}</color> : <color=#727472>{1}</color></align></size>'
+patrz:
   range: 15
   duration: 5
-  format: '<size=25><align=left><color=#00FFFF>「Look」</color><color=#FFFF00>{0}</color> : {1}</align></size>'
+  format: '<size=25><align=left><color=#003300>🎭|「Patrz」</color><color=#FFFF00>{0}</color> : <color=#727472>{1}</color></align></size>'
 ooc:
   range: 15
   duration: 5
-  format: '<size=25><align=left><color=yellow>「Ooc」</color><color=#FFFF00>{0}</color> : {1}</align></size>'
+  format: '<size=25><align=left><color=#003300>🎭|「Ooc」</color><color=#FFFF00>{0}</color> : <color=#727472>{1}</color></align></size>'
 try:
   range: 15
   duration: 5
-  format: '<size=25><align=left><color=yellow>「Try」</color><color=#FFFF00>{0}</color> : {1} | {2} </align></size>'
-desc:
+  format: '<size=25><align=left><color=#003300>🎭|「Try」</color><color=#FFFF00>{0}</color> : <color=#727472>{1}</color> <color=#003300>| {2}</color> </align></size>'
+Opis:
   range: 15
   duration: 5
-  format: '<size=25><align=left><color=blue>「Desc」</color><color=#FFFF00>{0}</color> : {1}</align></size>'
-assist:
+  format: '<size=25><align=left><color=#003300>🎭|「Opis」</color><color=#FFFF00>{0}</color> : <color=#727472>{1}</color></align></size>'
+pomoc:
   range: 0
   duration: 0
-  format: '<color=red>[pomoc]</color> <color=#ffcc00>{0}</color>: {1}'
+  format: '<color=green>[ModMail]</color> <color=#ffcc00>{0}</color>: {1}'
 # Maksymalna ilość znaków dla .opis
 max_custom_info_length: 250
 # Włącza lub wyłącza daną komende
 enabled_commands:
   me: true
   do: true
-  look: true
+  patrz: true
   ooc: true
   try: true
-  desc: true
+  Opis: true
   opis: true
   pomoc: true
-==============
 ```
 ==============
 # Translations
@@ -82,20 +81,20 @@ help_request_sent: 'Twoja Wiadomość została wysłana do staff''u.'
 command_names:
   me: me
   do: do
-  look: look
+  patrz: look
   ooc: ooc
   try: try
-  desc: desc
+  Opis: desc
   opis: opis
   pomoc: pomoc
 # Zbiór tego co robią dane komendy
 commands:
   me: Komenda Narracyjna 'Me'.
   do: Komenda Narracyjna 'Do'.
-  look: Komenda Narracyjna 'Look'.
+  patrz: Komenda Narracyjna 'patrz'.
   ooc: Komenda Narracyjna 'Ooc'.
   try: Komenda Narracyjna 'Try'.
-  desc: Komenda Narracyjna 'Desc'.
+  Opis: Komenda Narracyjna 'Opis'.
   opis: Ustawia opis.
   pomoc: Wysyła wiadomość do staffu serwera
 # Zbiór tego co może się stać po użyciu .try
